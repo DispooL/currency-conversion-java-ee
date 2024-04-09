@@ -1,15 +1,17 @@
 package com.conversioncurrency.responseDtos;
 
+import com.conversioncurrency.models.Currency;
+
 import java.math.BigDecimal;
 
-public class GetCalculatedExchangeRateResponseDto {
-    private final GetCurrencyResponseDto baseCurrency;
-    private final GetCurrencyResponseDto targetCurrency;
+public class CalculatedExchangeRateResponse {
+    private final Currency baseCurrency;
+    private final Currency targetCurrency;
     private final BigDecimal rate;
     private final BigDecimal amount;
     private final BigDecimal convertedAmount;
 
-    public GetCalculatedExchangeRateResponseDto(GetCurrencyResponseDto baseCurrency, GetCurrencyResponseDto targetCurrency, BigDecimal rate, BigDecimal amount, BigDecimal convertedAmount) {
+    public CalculatedExchangeRateResponse(Currency baseCurrency, Currency targetCurrency, BigDecimal rate, BigDecimal amount, BigDecimal convertedAmount) {
         this.baseCurrency = baseCurrency;
         this.targetCurrency = targetCurrency;
         this.rate = rate;
@@ -17,11 +19,11 @@ public class GetCalculatedExchangeRateResponseDto {
         this.convertedAmount = convertedAmount;
     }
 
-    public GetCurrencyResponseDto getBaseCurrency() {
+    public Currency getBaseCurrency() {
         return baseCurrency;
     }
 
-    public GetCurrencyResponseDto getTargetCurrency() {
+    public Currency getTargetCurrency() {
         return targetCurrency;
     }
 

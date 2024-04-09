@@ -1,13 +1,13 @@
 package com.conversioncurrency.responseDtos;
 
-public class GetCurrencyResponseDto {
+public class GetCurrencyResponse {
     private final int id;
     private final String name;
     private final String code;
     private final String sign;
     private final String createdAt;
 
-    public GetCurrencyResponseDto(int id, String name, String code, String sign, String createdAt) {
+    public GetCurrencyResponse(int id, String name, String code, String sign, String createdAt) {
         this.id = id;
         this.name = name;
         this.code = code;

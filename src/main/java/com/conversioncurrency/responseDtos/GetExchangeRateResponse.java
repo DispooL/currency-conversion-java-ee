@@ -2,13 +2,13 @@ package com.conversioncurrency.responseDtos;
 
 import java.math.BigDecimal;
 
-public class GetExchangeRateResponseDto {
+public class GetExchangeRateResponse {
     private final int id;
     private final GetCurrencyResponseDto baseCurrency;
     private final GetCurrencyResponseDto targetCurrency;
     private final BigDecimal rate;
 
-    public GetExchangeRateResponseDto(int id, GetCurrencyResponseDto baseCurrency, GetCurrencyResponseDto targetCurrency, BigDecimal rate) {
+    public GetExchangeRateResponse(int id, GetCurrencyResponseDto baseCurrency, GetCurrencyResponseDto targetCurrency, BigDecimal rate) {
         this.id = id;
         this.baseCurrency = baseCurrency;
         this.targetCurrency = targetCurrency;

@@ -1,11 +1,11 @@
 package com.conversioncurrency.requestDtos;
 
-public class CreateCurrencyRequestDto {
+public class CreateCurrencyRequest {
     private final String code;
     private final String name;
     private final String sign;
 
-    public CreateCurrencyRequestDto(String code, String name, String sign) {
+    public CreateCurrencyRequest(String code, String name, String sign) {
         this.code = code;
         this.name = name;
         this.sign = sign;

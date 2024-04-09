@@ -2,12 +2,12 @@ package com.conversioncurrency.requestDtos;
 
 import java.math.BigDecimal;
 
-public class GetCalculatedExchangeRateRequestDto {
+public class GetCalculatedExchangeRateRequest {
     private final String baseCurrencyCode;
     private final String targetCurrencyCode;
     private final BigDecimal amount;
 
-    public GetCalculatedExchangeRateRequestDto(String baseCurrencyCode, String targetCurrencyCode, BigDecimal amount) {
+    public GetCalculatedExchangeRateRequest(String baseCurrencyCode, String targetCurrencyCode, BigDecimal amount) {
         this.baseCurrencyCode = baseCurrencyCode;
         this.targetCurrencyCode = targetCurrencyCode;
         this.amount = amount;
